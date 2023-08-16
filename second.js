@@ -28,6 +28,12 @@ let withDraw = document.getElementById('button-with').addEventListener('click', 
     let withDrawInput = document.getElementById('Withdraw-feild');
     let inputValue = withDrawInput.value;
     let withDrawValueConvert = parseFloat(inputValue);
+    withDrawInput .value = ''; 
+
+    if(isNaN(withDrawValueConvert)){
+        alert('Please Type Your Number');
+        return ;
+    }
 
     let totalWithDrawSite = document.getElementById('total-withDraw');
     let previousWithDraw = totalWithDrawSite.innerText;
@@ -41,7 +47,7 @@ let withDraw = document.getElementById('button-with').addEventListener('click', 
     let banalceNumberType = parseFloat(previousTotalBalance);
     withDrawInput.value = '';
     if (withDrawValueConvert > banalceNumberType) {
-        alert('Apner Account Use Poriman Balance nai')
+        alert('Apner Sosur Ar Account Atto taka Balance nai')
         return '';
     }
     let totalWithDrawvaleu = withDrawValueConvert + withDrawInputConvert;
