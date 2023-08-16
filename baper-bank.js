@@ -5,10 +5,10 @@ let mybutton = document.getElementById('button').addEventListener('click', funct
     let emailvalue = myMail.value;
     let mypassword = document.getElementById('your-password');
     let passwordValue = mypassword.value;
-   
+    
 
-    if(emailvalue === 'abc12@gmail.com' && passwordValue === '123456'){
-        
+    if(emailvalue === 'abc12@gmail.com' && passwordValue === 'konika'){
+
         window.location.href = 'second.html';
         return '';
     }
@@ -16,6 +16,8 @@ let mybutton = document.getElementById('button').addEventListener('click', funct
         alert('please your Current Password And Email');
 
       }
+
+     
       
 }) 
 
