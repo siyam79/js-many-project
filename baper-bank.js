@@ -8,9 +8,9 @@ let mybutton = document.getElementById('button').addEventListener('click', funct
    
 
     if(emailvalue === 'abc12@gmail.com' && passwordValue === '123456'){
-        alert ('valid User')
-    
+        
         window.location.href = 'second.html';
+        return '';
     }
     else{
         alert('please your Current Password And Email');
