@@ -7,7 +7,12 @@ let button = document.getElementById('button-depo').addEventListener('click', fu
     if (isNaN(convertNumberType)) {
         alert('Please Type Your Number');
         return;
+    } 
+     if (convertNumberType < 0 ){
+        alert('Nagetive Value Not Allow');
+        return '';
     }
+    
    
     let totalDepoSite = document.getElementById('total-depo');
     let previousTotalDepo = totalDepoSite.innerText;
@@ -38,6 +43,7 @@ let withDraw = document.getElementById('button-with').addEventListener('click', 
         alert('Please Type Your Number');
         return;
     }
+    
 
     let totalWithDrawSite = document.getElementById('total-withDraw');
     let previousWithDraw = totalWithDrawSite.innerText;
@@ -53,7 +59,12 @@ let withDraw = document.getElementById('button-with').addEventListener('click', 
     if (withDrawValueConvert > banalceNumberType) {
         alert('Apner Sosur Ar Account Atto taka Balance nai')
         return '';
-    }
+    } 
+    if(withDrawValueConvert < 0){
+        alert('Nagetive Value Not Allow');
+        return '';
+    } 
+    
     let totalWithDrawvaleu = withDrawValueConvert + withDrawInputConvert;
 
     let currentMyBalance = banalceNumberType - withDrawValueConvert;
@@ -62,6 +73,8 @@ let withDraw = document.getElementById('button-with').addEventListener('click', 
 
 
     totalWithDrawSite.innerText = totalWithDrawvaleu;
+    
+   
 
 
 })

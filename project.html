@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Dom </title>
+ <!--  tailwind  css  -->
+ <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <section class="">
+        <div class="text-center mt-10 text-3xl uppercase font-mono text-sky-700 ">
+            <span>Ice-Cream Shop</span>
+        </div>
+        <div class="grid grid-cols-4 gap-10 w-4/5 mx-auto justify-center align-center mt-10 font-mono ">   
+
+
+                    <!--  1  number --> 
+
+        <div class="shadow-md  shadow-black align-center justify-center opacity-80 h-[420px] bg-cyan-300">
+           <div class="text-center ">
+            <h1 class="font-bold text-xl py-4 ">Orange Flevour ice-</h1>
+            <img class="justify-center ml-12 " src="./tea-1.png" alt="">
+            <h1 class="text-xl font-extrabold mt-4">Milk Flevour !!</h1>
+            <h1 id="taka" class="text-2xl font-bold">price: 40 $</h1>
+            <button onclick="addButtton(this)" class="border-double border-4 border-indigo-600 px-2 mt-2 py-0 bg-slate-500   text-white rounded-xl bg-sky-500 hover:bg-sky-700 ">Bay Now </button>
+           </div>
+        </div>
+
+
+
+
+                          <!--  2  number -->
+
+        <div class="shadow-md  shadow-black align-center justify-center opacity-80 h-[420px] bg-sky-400">
+           <div class="text-center ">
+            <h1 class="font-bold text-xl py-4 ">Orange Flevour ice-</h1>
+            <img class="justify-center ml-10 " src="./tea-2.png" alt="">
+            <p class="text-xl font-extrabold mt-4"> Lemon Flevour !!</p>
+            <h1 id="taka" class="text-2xl font-bold">price: 30 $</h1>
+            <button onclick="addButtton(this)" class="border-double border-4 border-indigo-600 px-2 mt-2 py-0 bg-slate-500   text-white rounded-xl bg-sky-500 hover:bg-sky-700 ">Bay Now </button>
+           </div>
+        </div>
+
+                    <!-- 3  number -->
+
+        <div class="shadow-md  shadow-black align-center justify-center opacity-80 h-[420px] bg-blue-300">
+           <div class="text-center ">
+            <h1 class="font-bold text-xl py-4 ">Orange Flevour ice-</h1>
+            <img class="justify-center ml-10 " src="./tea-3.png" alt="">
+            <p class="text-xl font-extrabold mt-4">Choklet Flevour !!</p>
+            <h1 id="taka" class="text-2xl font-bold">price: 60 $</h1>
+            <button onclick="addButtton(this)" class="border-double border-4 border-indigo-600 px-2 mt-2 py-0 bg-slate-500   text-white rounded-xl bg-sky-500 hover:bg-sky-700 ">Bay Now </button>
+           </div>
+        </div>
+
+                       <!--  4  number -->
+
+
+        <div class="shadow-md  shadow-black align-center justify-center opacity-80 h-[420px] bg-indigo-400 ">
+           <div class="text-center ">
+            <h1 class="font-bold text-xl py-4 ">Orange Flevour ice-</h1>
+            <img class="justify-center ml-12 " src="./tea-4.png" alt="">
+            <p class="text-xl font-extrabold mt-4"> Orange Flevour !!</p>
+            <h1 id="taka" class="text-2xl font-bold">price: 50 $</h1>
+            <button onclick="addButtton(this)" class="border-double border-4 border-indigo-600 px-2 mt-2 py-0 bg-slate-500   text-white rounded-xl bg-sky-500 hover:bg-sky-700 ">Bay Now </button>
+           </div>
+        </div>
+    </div>
+    </section>
+
+    <div class="shadow-md  shadow-black align-center justify-center opacity-80 h-full w-2/6 mx-auto bg-slate-700 text-white pb-4">
+        <div class="text-center ">
+         <h1 class="font-bold text-xl mt-8 py-4 ">Code : PH-HERO </h1>
+         <div id="add-item" class="add-item">
+
+         </div>
+         <p class="text-base font-semibold mt-2">Total : <span id="total-taka"> 00</span> $</p>
+         <p class="text-base font-semibold mt-4">Discound : 00 </p>
+         <button class="border-double border-4 border-indigo-600 px-2 mt-2 py-0 bg-slate-500   text-white rounded-xl bg-sky-500 hover:bg-sky-700 "> Total Bay Now </button>
+        </div> 
+
+    <script src="./project.js"></script>
+</body>
+</html>

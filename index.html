@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- tailwind Css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <section class="w-3/4 mx-auto bg-fuchsia-600 mt-8 pb-12 pt-4 rounded-xl ">
+        <h1 class="text-2xl font-bold text-center  ">Text Editor </h1>
+
+        <div class="rounded-xl ">
+
+
+            <div class="flex justify-between w-2/4 mx-auto   mt-12 ">
+                <div class="space-x-2.5">
+                    <a id="bx-bold" href="#"><i class='bx bx-bold'></i></a>
+                    <a href="#"><i class='bx bx-italic'></i></a>
+                    <a href="#"><i class='bx bx-underline'></i></a>
+                </div>
+                <div class="space-x-2.5">
+                    <a href=""><i class='bx bx-align-left'></i></a>
+                    <a href=""><i class='bx bx-align-right'></i></a>
+                    <a href=""><i class='bx bx-align-middle'></i></i></a>
+                    <a href=""><i class='bx bx-align-left'></i></a>
+
+                </div>
+                <div>
+                    <input class="w-[10%]" type="text">
+                    <input class="cursor-pointer" type="color" name="" id="">
+
+                </div>
+
+            </div>
+            <div>
+                <textarea class="ml-40 mt-4 rounded-lg" name="" id="input-feild" cols="80" rows="15"></textarea>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
